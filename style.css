@@ -1,5 +1,13 @@
-/* navbar styles */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
+/* navbar styles ------------------*/
+nav {
+  z-index: 100;
+}
 .codo-img {
   height: auto;
   width: auto;
@@ -16,7 +24,7 @@
 }
 
 .navbar {
-  background-color: rgb(75, 75, 75);
+  background-color: rgba(53, 58, 64, 255);
 }
 .navbar :hover {
   transition: all 1s ease-out;
@@ -34,18 +42,32 @@
   margin-right: 20px;
 }
 
-/* main styles */
+/* main styles----------------- */
 .hawai {
   position: relative;
 }
 
 .overlay {
-  font-size: medium;
+  font-size: x-small;
   text-align: right;
   color: white;
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
   position: absolute;
-  top: 34rem;
-  right: 6rem;
+  top: 10rem;
+  right: 1rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .overlay {
+    font-size: large;
+    text-align: right;
+    text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black,
+      0 -0.07em black;
+    color: white;
+    position: absolute;
+    top: 34rem;
+    right: 2rem;
+  }
 }
 
 .orador {
@@ -76,18 +98,18 @@
 
 .js {
   display: inline;
-  border: 2px solid yellow;
+  border: 2px solid rgba(254, 193, 7, 255);
   border-radius: 5px;
-  background-color: yellow;
+  background-color: rgba(254, 193, 7, 255);
   color: black;
   margin-right: 0.5rem;
 }
 
 .react {
   display: inline;
-  border: 2px solid rgb(33, 222, 247);
+  border: 2px solid rgba(23, 162, 185, 255);
   border-radius: 5px;
-  background-color: rgb(44, 248, 255);
+  background-color: rgba(23, 162, 185, 255);
   color: white;
 }
 
@@ -95,16 +117,16 @@
   display: inline;
   border: 2px solid grey;
   border-radius: 5px;
-  background-color: grey;
+  background-color: rgba(108, 117, 125, 255);
   color: white;
   margin-right: 0.5rem;
 }
 
 .star {
   display: inline;
-  border: 2px solid red;
+  border: 2px solid rgba(221, 53, 68, 255);
   border-radius: 5px;
-  background-color: red;
+  background-color: rgba(221, 53, 68, 255);
   color: white;
   margin-right: 0.5rem;
 }
@@ -114,7 +136,7 @@
 }
 
 .letras {
-  background-color: grey;
+  background-color: rgba(53, 58, 64, 255);
   color: white;
   margin-top: 1rem;
   margin-left: 0;
@@ -146,4 +168,100 @@
 .or {
   margin-top: -14px;
   font-size: x-large;
+}
+
+.contact-form {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.nombre1 {
+  margin-bottom: 1rem;
+}
+.nombre2 {
+  margin-bottom: 1rem;
+}
+.subject {
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.btn-success {
+  background-color: rgba(150, 201, 62, 255);
+  padding-right: 4.5rem;
+  padding-left: 4.5rem;
+}
+.recuerda {
+  margin-top: -20px;
+  font-size: small;
+  color: grey;
+}
+
+/* media querries de la form para pantallas grandes */
+
+@media only screen and (min-width: 1000px) {
+  .nombre1 {
+    text-align: end;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nombre2 {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .subject {
+    padding-right: 14.5rem;
+    /* padding-left: 7.5rem; */
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .btn-success {
+    padding-right: 11.5rem;
+    padding-left: 11.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .recuerda {
+    margin-top: -23px;
+    margin-left: -160px;
+    font-size: small;
+    color: grey;
+  }
+}
+/* -------------------------------------------------- */
+
+/* footer styles */
+.footer-container {
+  background-color: rgba(30, 81, 110, 255);
+  margin-top: 1rem;
+  color: white;
+}
+
+.footer-items {
+  margin-top: 1rem;
+  width: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-items {
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: -10rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-container {
+    background-color: rgba(30, 81, 110, 255);
+    margin-top: 1rem;
+    color: white;
+    height: 80px;
+  }
 }
