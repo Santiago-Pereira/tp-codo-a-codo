@@ -53,7 +53,7 @@ nav {
   color: white;
   text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
   position: absolute;
-  top: 10rem;
+  top: 8.5rem;
   right: 1rem;
 }
 
@@ -264,4 +264,27 @@ nav {
     color: white;
     height: 80px;
   }
+}
+
+/* tickets section /////////////////////////////////////////////////////////// */
+.ticket-card {
+  margin-top: 2rem;
+  border-radius: 1px;
+}
+
+.azul {
+  border: 2px solid blue;
+}
+
+.verde {
+  border: 2px solid green;
+}
+
+.amarillo {
+  border: 2px solid yellow;
+}
+
+.padding-0 {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
 }
