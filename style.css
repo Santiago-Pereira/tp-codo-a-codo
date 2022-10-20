@@ -222,18 +222,17 @@ nav {
 }
 
 @media only screen and (min-width: 1000px) {
-  .boton-1 {
-    padding-right: 11.5rem;
-    padding-left: 11.5rem;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
   .recuerda {
     margin-top: -23px;
     margin-left: -160px;
     font-size: small;
     color: grey;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .enviar {
+    width: auto;
   }
 }
 /* -------------------------------------------------- */
