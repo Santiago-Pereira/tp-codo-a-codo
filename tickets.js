@@ -15,6 +15,7 @@ const ticketValue = 200;
 estudiante.value = ticketValue - ticketValue * 0.8;
 trainee.value = ticketValue - ticketValue * 0.5;
 junior.value = ticketValue - ticketValue * 0.15;
+let uno = 0;
 
 //functions
 resumen.addEventListener("click", () => {
@@ -26,14 +27,34 @@ resumen.addEventListener("click", () => {
     e.key === "Enter" ? Number(cantInput.value) : e.preventDefault();
   });
 
-  total.textContent = "$" + categoria.value * cantInput.value;
+  function p() {
+    if (categoria.value == 40) {
+      uno = 80;
+    }
+    if (categoria.value == 100) {
+      uno = 50;
+    }
+    if (categoria.value == 170) {
+      uno = 15;
+    }
+    return uno;
+  }
+
+  total.textContent = `$${
+    categoria.value * cantInput.value
+  }  (El descuento aplicado fue del: ${p()}%)`;
+  resumen.disabled = true;
 });
 
-borrar.addEventListener("click", () => {
+function reset() {
   total.textContent = 0;
   categoria.value = 0;
   cantInput.value = 0;
-});
+  resumen.disabled = false;
+  uno = 0;
+}
+
+borrar.addEventListener("click", reset);
 
 /* console.log(cat);
 console.log(cantidad);
